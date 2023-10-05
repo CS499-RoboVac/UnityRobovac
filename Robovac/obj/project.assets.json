@@ -1,45 +1,26 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {
-      "Assembly-CSharp/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "compile": {
-          "bin/placeholder/Assembly-CSharp.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Assembly-CSharp.dll": {}
-        }
-      }
-    }
+    ".NETStandard,Version=v2.1": {}
   },
-  "libraries": {
-    "Assembly-CSharp/1.0.0": {
-      "type": "project",
-      "path": "Assembly-CSharp.csproj",
-      "msbuildProject": "Assembly-CSharp.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": [
-      "Assembly-CSharp >= 1.0.0"
-    ]
+    ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\John\\.nuget\\packages\\": {}
+    "C:\\Users\\Bepis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\John\\Documents\\GitHub\\UnityRobovac\\Robovac\\Assembly-CSharp-Editor.csproj",
-      "projectName": "Assembly-CSharp-Editor",
-      "projectPath": "c:\\Users\\John\\Documents\\GitHub\\UnityRobovac\\Robovac\\Assembly-CSharp-Editor.csproj",
-      "packagesPath": "C:\\Users\\John\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\John\\Documents\\GitHub\\UnityRobovac\\Robovac\\obj\\",
+      "projectUniqueName": "c:\\Users\\Bepis\\Documents\\GitHub\\UnityRobovac\\Robovac\\Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "c:\\Users\\Bepis\\Documents\\GitHub\\UnityRobovac\\Robovac\\Assembly-CSharp.csproj",
+      "packagesPath": "C:\\Users\\Bepis\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Bepis\\Documents\\GitHub\\UnityRobovac\\Robovac\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\John\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Bepis\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -50,11 +31,7 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {
-            "c:\\Users\\John\\Documents\\GitHub\\UnityRobovac\\Robovac\\Assembly-CSharp.csproj": {
-              "projectPath": "c:\\Users\\John\\Documents\\GitHub\\UnityRobovac\\Robovac\\Assembly-CSharp.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
