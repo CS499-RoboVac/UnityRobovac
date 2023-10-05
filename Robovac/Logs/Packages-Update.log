@@ -1,5 +1,5 @@
 
-=== Mon Oct  2 13:26:23 2023
+=== Thu Oct  5 14:20:34 2023
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
@@ -37,28 +37,8 @@ The following packages were added:
   com.unity.modules.wind@1.0.0
   com.unity.modules.xr@1.0.0
 The following packages were updated:
-  com.unity.collab-proxy from version 1.17.2 to 2.0.5
-  com.unity.ide.rider from version 3.0.15 to 3.0.24
-  com.unity.ide.visualstudio from version 2.0.16 to 2.0.18
-  com.unity.render-pipelines.universal from version 14.0.3 to 14.0.8
-  com.unity.timeline from version 1.7.1 to 1.7.5
-  com.unity.visualscripting from version 1.7.8 to 1.8.0
-
-=== Thu Oct  5 13:11:41 2023
-
-Packages were changed.
-Update Mode: updateDependencies
-
-The following packages were updated:
-  com.unity.ide.vscode from version 1.1.4 to 1.2.5
-  com.unity.test-framework from version 1.1.9 to 1.1.33
-  com.unity.textmeshpro from version 2.0.1 to 3.0.6
-  com.unity.timeline from version 1.2.10 to 1.7.5
-
-=== Thu Oct  5 13:11:42 2023
-
-Packages were changed.
-Update Mode: mergeDefaultDependencies
-
-The following packages were added:
-  com.unity.2d.sprite@1.0.0
+  com.unity.collab-proxy from version 2.0.0 to 2.0.5
+  com.unity.feature.2d from version 1.0.0 to 2.0.0
+  com.unity.ide.rider from version 3.0.18 to 3.0.24
+  com.unity.ide.visualstudio from version 2.0.17 to 2.0.18
+  com.unity.timeline from version 1.7.3 to 1.7.5
