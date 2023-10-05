@@ -1,6 +1,6 @@
 sceneSetups:
 - path: Assets/Scenes/MainScene.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/FloorplanDesigner.unity
@@ -8,6 +8,6 @@ sceneSetups:
   isActive: 1
   isSubScene: 0
 - path: Assets/Scenes/Simulator.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
   isSubScene: 0
