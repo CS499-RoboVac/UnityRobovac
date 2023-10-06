@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class RoomController : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class RoomController : MonoBehaviour
 
     // Wall Prefab
     public GameObject WallPrefab;
+
+    public TextMeshProUGUI RoomSizeText;
+
+    public GameObject RoomSizeTextCanvas;
     
     private GameObject[] Walls;
     // Start is called before the first frame update
@@ -52,6 +57,15 @@ public class RoomController : MonoBehaviour
     {
         // Set the room's position
         transform.position = new Vector3(roomData.Position.x, roomData.Position.y, 0);
+
+        // Calculate the room's size for the SizeText
+        float roomSize = roomData.Size.x * roomData.Size.y;
+
+        // Set the RoomSizeText to the room's size
+        RoomSizeText.text = roomSize.ToString() + " sq. ft.";
+
+        // Move the RoomSizeText to the center of the Room
+        RoomSizeText.transform.position = new Vector3(roomData.Position.x, roomData.Position.y, 0);
 
         // Based on the RoomData, set the Room's size and position
         // Set the Room's walls based on the RoomData
