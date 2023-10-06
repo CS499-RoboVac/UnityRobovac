@@ -7,7 +7,7 @@ public class LevelEditorManager : MonoBehaviour
     public ItemController[] ItemButtons;
     public GameObject[] ItemPrefabs;
     public int CurrentButtonPressed;
-
+    public float PassedSize;
     private void Update()
     {
         Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -20,7 +20,7 @@ public class LevelEditorManager : MonoBehaviour
             if(createdObject.GetComponent<RoomController>() != null)
             {
                 createdObject.GetComponent<RoomController>().roomData.Position = new Vector2S(worldPosition.x, worldPosition.y);
-                //createdObject.GetComponent<RoomController>().RoomResize();
+                createdObject.GetComponent<RoomController>().roomData.Size = new Vector2S(PassedSize, PassedSize);
             }
         }
     }

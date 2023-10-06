@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class RoomController : MonoBehaviour
 {
@@ -19,8 +20,8 @@ public class RoomController : MonoBehaviour
 
     public TextMeshProUGUI RoomSizeText;
 
-    public GameObject RoomSizeTextCanvas;
-    
+    public Image RoomBackground;
+
     private GameObject[] Walls;
     // Start is called before the first frame update
 
@@ -66,6 +67,9 @@ public class RoomController : MonoBehaviour
 
         // Move the RoomSizeText to the center of the Room
         RoomSizeText.transform.position = new Vector3(roomData.Position.x, roomData.Position.y, 0);
+
+        // Scale the RoomBackground to the room's size
+        RoomBackground.rectTransform.localScale = new Vector2(roomData.Size.x, roomData.Size.y);
 
         // Based on the RoomData, set the Room's size and position
         // Set the Room's walls based on the RoomData

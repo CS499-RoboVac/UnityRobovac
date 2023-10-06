@@ -15,4 +15,10 @@ public class Util : MonoBehaviour
     {
         Debug.Log(message);
     }
+
+    //Function to make a game object visible or invisible
+    public void ToggleVisible(GameObject gameObject)
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
 }
