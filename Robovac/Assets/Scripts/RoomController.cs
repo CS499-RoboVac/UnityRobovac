@@ -22,6 +22,13 @@ public class RoomController : MonoBehaviour
 
     public Image RoomBackground;
 
+    // Only used for previews
+    public Color ValidColor;
+    public Color InvalidColor;
+
+    [HideInInspector]
+    public bool Valid = true;
+
     private GameObject[] Walls;
     // Start is called before the first frame update
 
@@ -45,12 +52,6 @@ public class RoomController : MonoBehaviour
         }
         
         RoomResize();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     // Called when the Room is resized in the Level Editor
@@ -85,5 +86,31 @@ public class RoomController : MonoBehaviour
         // Bottom Wall
         Walls[3].transform.localScale = new Vector3(roomData.Size.x, 0.1f, 1);
         Walls[3].transform.position = new Vector3(roomData.Position.x, roomData.Position.y - roomData.Size.y / 2, 0);
+
+        // If the room is valid, set the wall colors to the valid color, otherwise set them to the invalid color
+        if(Valid)
+        {
+            for(int i = 0; i < 4; i++)
+            {
+                Walls[i].GetComponent<SpriteRenderer>().color = ValidColor;
+            }
+        }
+        else
+        {
+            for(int i = 0; i < 4; i++)
+            {
+                Walls[i].GetComponent<SpriteRenderer>().color = InvalidColor;
+            }
+        }
     }
+
+    void OnDestroy()
+    {
+        // Destroy the walls
+        for(int i = 0; i < 4; i++)
+        {
+            Destroy(Walls[i]);
+        }
+    }
+
 }

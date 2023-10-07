@@ -247,9 +247,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7329441692401339339}
   - component: {fileID: 6232875008302941954}
+  - component: {fileID: 3245446730013711620}
   m_Layer: 0
   m_Name: Room
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,6 +293,30 @@ MonoBehaviour:
   WallPrefab: {fileID: 116698927431138857, guid: e8ba1713ca4a66f43b175afa4bce26cb, type: 3}
   RoomSizeText: {fileID: 7781876953246726119}
   RoomBackground: {fileID: 7870189093237639111}
+  ValidColor: {r: 1, g: 1, b: 1, a: 1}
+  InvalidColor: {r: 1, g: 1, b: 1, a: 1}
+  Valid: 1
+--- !u!65 &3245446730013711620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344897220960645917}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8594426842404559376
 GameObject:
   m_ObjectHideFlags: 0

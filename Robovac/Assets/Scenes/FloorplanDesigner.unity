@@ -1714,6 +1714,9 @@ MonoBehaviour:
   - {fileID: 471722224}
   ItemPrefabs:
   - {fileID: 8344897220960645917, guid: 560958a49ba4197468a74ecb0bbbf3ef, type: 3}
+  ItemPreview:
+  - {fileID: 8344897220960645917, guid: afb22ed838a84e047936e77b5bac578c, type: 3}
+  scale: 1
   CurrentButtonPressed: 0
   PassedSize: 0
 --- !u!4 &2117388077
